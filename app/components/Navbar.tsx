@@ -9,12 +9,12 @@ import { HiOutlinePlus } from "react-icons/hi";
 
 export default function Navbar() {
     return (
-        <nav className="flex justify-between items-center px-10">
+        <nav className="flex justify-between items-center mx-4">
             <div className="flex items-center gap-2">
                 <FiMenu />
                 <Image src="/youtube-logo.png" alt="youtube logo" width={100} height={100} />
             </div>
-            <div className="flex items-center gap-5 w-full max-w-2xl mx-auto mt-5">
+            <div className="flex items-center gap-5 w-full max-w-2xl mx-auto">
                 <button className="flex items-center border border-gray-300 rounded-full overflow-hidden">
                     <input type="text" placeholder="Search" className="font-semibold px-4 py-2 focus:outline-none h-10 w-200 border border-gray-300" />
                     <FiSearch className="text-3xl cursor-pointer" />
@@ -24,12 +24,12 @@ export default function Navbar() {
                 </button>
             </div>
             <div className="flex items-center gap-6">
-                <button className="flex items-center border border-gray-200 bg-gray-200 font-bold rounded-full hover:bg-gray-200 h-8 w-25 gap-3 cursor-pointer">
-                    <HiOutlinePlus className="text-xl" />
+                <button className="flex items-center border border-gray-200 bg-gray-200 font-semibold text-sm rounded-full hover:bg-gray-200 h-8 w-20 px-6 cursor-pointer">
+                    <HiOutlinePlus />
                     Create
                 </button>
                 <CiBellOn className="cursor-pointer rounded-full hover:bg-gray-200 h-6 w-6" />
-                <span className="flex items-center p-3 font-bold border border-gray-200 bg-pink-500 rounded-full w-10 h-10 cursor-pointer">S</span>
+                <span className="flex items-center justify-center text-white border border-gray-200 bg-pink-500 w-9 h-9 rounded-full cursor-pointer">S</span>
             </div>
         </nav>
     )

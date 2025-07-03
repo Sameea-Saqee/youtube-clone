@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { BsFillMicFill } from "react-icons/bs";
-import { CiBellOn } from "react-icons/ci";
 import { FiSearch } from "react-icons/fi";
 import { FiMenu } from "react-icons/fi";
+import { CiBellOn } from "react-icons/ci";
 import { HiOutlinePlus } from "react-icons/hi";
 
 export default function Navbar() {

@@ -8,6 +8,7 @@ import { CgPlayList } from "react-icons/cg";
 import { MdOutlineWatchLater } from "react-icons/md";
 import { BiLike } from "react-icons/bi";
 import { TbMathGreater } from "react-icons/tb";
+import VideoCard from "./components/VideoCard";
 
 
 export default function Home() {
@@ -33,7 +34,7 @@ export default function Home() {
         <Link href="/" className="sidebar">Subscriptions</Link>
       </div>
       <div className="w-5/6 h-auto pt-3">
-        <div className="flex justify-evenly">
+        <div className="flex justify-between mx-4">
           <Link href="/" className="navbar">All</Link>
           <Link href="/" className="navbar">News</Link>
           <Link href="/" className="navbar">JavaScript</Link>
@@ -45,7 +46,15 @@ export default function Home() {
           <Link href="/" className="navbar">Cars</Link>
           <Link href="/" className="navbar">Watched</Link>
         </div>
-        <div></div>
+        <div className="grid grid-cols-3">
+           <VideoCard />
+           <VideoCard />
+           <VideoCard />
+           <VideoCard />
+           <VideoCard />
+           <VideoCard />
+           <VideoCard />
+        </div>
       </div>
     </div>
   );

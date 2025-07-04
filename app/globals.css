@@ -2,9 +2,9 @@
 
 @layer components{
     .navbar{
-        @apply flex items-center border border-gray-200 bg-gray-200 rounded-lg font-semibold hover:bg-black hover:text-amber-50 w-auto px-2 h-8
+        @apply flex items-center border border-gray-100 bg-gray-100 rounded-lg font-semibold hover:bg-black hover:text-amber-50 w-auto px-2 h-8
     }
     .sidebar{
-        @apply flex items-center w-auto h-10 pl-2 mx-3 mt-3 gap-4 hover:border hover:border-gray-200  rounded-lg hover:bg-gray-200
+        @apply flex items-center w-auto h-10 pl-2 mx-3 mt-3 gap-4 hover:border hover:border-gray-100  rounded-lg hover:bg-gray-100 
     }
 }

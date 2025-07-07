@@ -14,7 +14,8 @@ import VideoCard from "./components/VideoCard";
 export default function Home() {
   return (
     <div className="flex flex-row">
-      <div className="flex flex-col w-1/6 h-auto">
+      {/* sidebar */}
+      <div className="flex flex-col w-1/6 h-[calc(100vh-64px)] sticky top-[64px] overflow-y-auto bg-white scrollbar-thin">
         <Link href="/" className="sidebar"><IoMdHome className="size-5" />Home</Link>
         <Link href="/" className="sidebar"><SiYoutubeshorts className="size-5" />
           Shorts</Link>
@@ -33,27 +34,28 @@ export default function Home() {
           Liked videos</Link><hr className=" border-gray-300 mt-3" />
         <Link href="/" className="sidebar">Subscriptions</Link>
       </div>
-      <div className="w-5/6 h-auto pt-3">
-        <div className="flex justify-between mx-4">
-          <Link href="/" className="navbar">All</Link>
-          <Link href="/" className="navbar">News</Link>
-          <Link href="/" className="navbar">JavaScript</Link>
-          <Link href="/" className="navbar">Music</Link>
-          <Link href="/" className="navbar">Television series</Link>
-          <Link href="/" className="navbar">Live</Link>
-          <Link href="/" className="navbar">Visual arts</Link>
-          <Link href="/" className="navbar">Cartoons</Link>
-          <Link href="/" className="navbar">Cars</Link>
-          <Link href="/" className="navbar">Watched</Link>
+      {/* mini navbar div */}
+      <div className="w-5/6 h-auto">
+        <div className="flex justify-between mx-4 sticky top-12 z-40 bg-white py-4">
+          <Link href="/" className="miniNavbar">All</Link>
+          <Link href="/" className="miniNavbar">News</Link>
+          <Link href="/" className="miniNavbar">JavaScript</Link>
+          <Link href="/" className="miniNavbar">Music</Link>
+          <Link href="/" className="miniNavbar">Television series</Link>
+          <Link href="/" className="miniNavbar">Live</Link>
+          <Link href="/" className="miniNavbar">Visual arts</Link>
+          <Link href="/" className="miniNavbar">Cartoons</Link>
+          <Link href="/" className="miniNavbar">Cars</Link>
+          <Link href="/" className="miniNavbar">Watched</Link>
         </div>
         <div className="grid grid-cols-3">
-           <VideoCard />
-           <VideoCard />
-           <VideoCard />
-           <VideoCard />
-           <VideoCard />
-           <VideoCard />
-           <VideoCard />
+          <VideoCard />
+          <VideoCard />
+          <VideoCard />
+          <VideoCard />
+          <VideoCard />
+          <VideoCard />
+          <VideoCard />
         </div>
       </div>
     </div>

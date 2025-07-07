@@ -7,7 +7,7 @@ import { VscMicFilled } from "react-icons/vsc";
 
 export default function Navbar() {
     return (
-        <nav className="flex justify-between items-center mx-4">
+        <nav className="flex justify-between items-center mx-4 sticky top-0 z-50 bg-white h-14">
             <div className="flex items-center gap-2">
                 <FiMenu />
                 <Image src="/youtube-logo.png" alt="youtube logo" width={100} height={100} />

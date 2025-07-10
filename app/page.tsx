@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { IoMdHome } from "react-icons/io";
 import { SiYoutubeshorts } from "react-icons/si";
@@ -13,9 +12,9 @@ import VideoCard from "./components/VideoCard";
 
 export default function Home() {
   return (
-    <div className="flex flex-row">
+    <div className="flex flex-row md:flex-row">
       {/* sidebar */}
-      <div className="flex flex-col w-1/6 h-[calc(100vh-64px)] sticky top-[64px] overflow-y-auto bg-white scrollbar-thin">
+      <div className="hidden md:flex flex-col w-1/6 h-[calc(100vh-64px)] sticky overflow-y-auto top-16 bg-white scrollbar-thin">
         <Link href="/" className="sidebar"><IoMdHome className="size-5" />Home</Link>
         <Link href="/" className="sidebar"><SiYoutubeshorts className="size-5" />
           Shorts</Link>
@@ -36,7 +35,7 @@ export default function Home() {
       </div>
       {/* mini navbar div */}
       <div className="w-5/6 h-auto">
-        <div className="flex justify-between mx-4 sticky top-12 z-40 bg-white py-4">
+        <div className="flex justify-between mx-4 sticky top-12 z-40 bg-white py-4 flexex-wrap gap-2 px-4">
           <Link href="/" className="miniNavbar">All</Link>
           <Link href="/" className="miniNavbar">News</Link>
           <Link href="/" className="miniNavbar">JavaScript</Link>
@@ -48,7 +47,7 @@ export default function Home() {
           <Link href="/" className="miniNavbar">Cars</Link>
           <Link href="/" className="miniNavbar">Watched</Link>
         </div>
-        <div className="grid grid-cols-3">
+        <div className="grid grid-cols-3 sm:grid-cols-1 sm:mx-6 lg:grid-cols-3 px-4">
           <VideoCard />
           <VideoCard />
           <VideoCard />

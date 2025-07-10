@@ -13,19 +13,28 @@ export default function Navbar() {
                 <Image src="/youtube-logo.png" alt="youtube logo" width={100} height={100} />
             </div>
             <div className="flex items-center gap-5 mx-auto">
-                <button className="flex items-center border border-gray-300 rounded-full overflow-hidden">
-                    <input
-                        type="text"
-                        placeholder="Search"
-                        className="pl-4 py-2 h-10 w-140 focus:outline-none"
-                    />
-                    <div className="bg-gray-200 h-10 flex items-center px-4">
-                        <FiSearch className="text-xl text-gray-700 cursor-pointer" />
+                <div className="flex items-center gap-2">
+                    {/* Full search bar (visible on md and up) */}
+                    <div className="hidden md:flex items-center border border-gray-300 rounded-full overflow-hidden">
+                        <input
+                            type="text"
+                            placeholder="Search"
+                            className="pl-4 py-2 h-10 w-150 focus:outline-none"
+                        />
+                        <div className="bg-gray-200 h-10 flex items-center px-4">
+                            <FiSearch className="text-xl text-gray-700 cursor-pointer" />
+                        </div>
                     </div>
-                </button>
+
+                    {/* Only search icon on small screens */}
+                    <button className="md:hidden bg-gray-100 hover:bg-gray-200 w-10 h-10 flex items-center justify-center rounded-full">
+                        <FiSearch className="text-xl text-gray-700" />
+                    </button>
+                </div>
+
 
                 <button className="rounded-full bg-gray-100 hover:bg-gray-200 w-10 h-10 flex items-center justify-center">
-                    <VscMicFilled  className="text-xl" />
+                    <VscMicFilled className="text-xl" />
                 </button>
             </div>
 

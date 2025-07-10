@@ -34,8 +34,8 @@ export default function Home() {
         <Link href="/" className="sidebar">Subscriptions</Link>
       </div>
       {/* mini navbar div */}
-      <div className="w-5/6 h-auto">
-        <div className="flex justify-between mx-4 sticky top-12 z-40 bg-white py-4 flexex-wrap gap-2 px-4">
+      <div className="w-full md:w-5/6 h-auto">
+        <div className="hidden md:flex justify-between mx-4 sticky top-12 z-40 bg-white py-4 flexex-wrap gap-2 px-4">
           <Link href="/" className="miniNavbar">All</Link>
           <Link href="/" className="miniNavbar">News</Link>
           <Link href="/" className="miniNavbar">JavaScript</Link>
@@ -47,7 +47,7 @@ export default function Home() {
           <Link href="/" className="miniNavbar">Cars</Link>
           <Link href="/" className="miniNavbar">Watched</Link>
         </div>
-        <div className="grid grid-cols-3 sm:grid-cols-1 sm:mx-6 lg:grid-cols-3 px-4">
+        <div className="grid grid-cols-3 max-sm:grid-cols-1 gap-4 px-4 max-sm:max-w-sm max-sm:mx-auto">
           <VideoCard />
           <VideoCard />
           <VideoCard />

@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 function VideoCard() {
     return (
-<div className="w-full">
+        <div className="w-full">
             <Image src="/landscap1.png" alt='Video thumbnail' width='450' height='250' className='rounded-xl mt-8 w-full h-auto' />
             <div className='flex gap-2 my-3'>
                 <Image src="/landscap1.png" alt='Video thumbnail' width={100} height={100} className='w-11 h-11 rounded-full' />

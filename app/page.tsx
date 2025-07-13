@@ -17,7 +17,10 @@ export default function Home() {
           <Link href="/" className="miniNavbar">Visual arts</Link>
           <Link href="/" className="miniNavbar">Cartoons</Link>
           <Link href="/" className="miniNavbar">Cars</Link>
-          <Link href="/" className="miniNavbar">Watched</Link>
+          <Link href="/" className="miniNavbar">Html</Link>
+          <Link href="/" className="miniNavbar">Css</Link>
+          <Link href="/" className="miniNavbar">Typscript</Link>
+          <Link href="/" className="miniNavbar">Tailwind</Link>
         </div>
         <div className="grid grid-cols-3 max-sm:grid-cols-1 gap-4 px-4 max-sm:max-w-sm max-sm:mx-auto">
           <VideoCard />

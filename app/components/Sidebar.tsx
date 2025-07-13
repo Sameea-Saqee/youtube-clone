@@ -14,7 +14,7 @@ function Sidebar() {
             <Link href="/" className="sidebar"><IoMdHome className="size-5" />Home</Link>
             <Link href="/shorts" className="sidebar"><SiYoutubeshorts className="size-5" />
                 Shorts</Link>
-            <Link href="/" className="sidebar"><MdOutlineSubscriptions className="size-5" />
+            <Link href="/subscriptions" className="sidebar"><MdOutlineSubscriptions className="size-5" />
                 Subscription</Link><hr className=" border-gray-300 mt-3" />
             <Link href="/" className="sidebar">You<TbMathGreater
                 className="size-3 text-black-900" />

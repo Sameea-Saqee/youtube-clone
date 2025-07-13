@@ -19,7 +19,7 @@ export default function Navbar() {
                         <input
                             type="text"
                             placeholder="Search"
-                            className="pl-4 py-2 h-10 w-150 focus:outline-none"
+                            className="pl-4 w-120 focus:outline-none"
                         />
                         <div className="bg-gray-200 h-10 flex items-center px-4">
                             <FiSearch className="text-xl text-gray-700 cursor-pointer" />

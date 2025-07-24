@@ -20,7 +20,7 @@ function Subscriptions() {
           </button>
         </div>
       </div>
-      <div className="grid grid-cols-3 max-sm:grid-cols-1 gap-4 px-4 max-sm:max-w-sm max-sm:mx-auto">
+      <div className="grid grid-cols-3 max-sm:grid-cols-1 gap-4 px-4 max-sm:max-w-sm max-sm:mx-auto pt-2">
         <VideoCard />
         <VideoCard />
         <VideoCard />

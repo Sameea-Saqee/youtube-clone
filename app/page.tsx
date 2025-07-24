@@ -7,7 +7,7 @@ export default function Home() {
     <div className="flex flex-row md:flex-row ">
       {/* mini navbar div */}
       <div className="w-full h-auto">
-        <div className="hidden md:flex justify-between mx-4 sticky top-12 z-40 bg-white py-4 flexex-wrap gap-2 px-4">
+        <div className="hidden md:flex justify-between mx-4 sticky top-12 z-40 bg-white py-4 flex-wrap gap-2 px-4">
           <Link href="/" className="miniNavbar">All</Link>
           <Link href="/" className="miniNavbar">News</Link>
           <Link href="/" className="miniNavbar">JavaScript</Link>
